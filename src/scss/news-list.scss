@@ -1,0 +1,173 @@
+main {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center;
+	align-items: center; */
+
+	a {
+		color: #000;
+
+		&:hover {
+			color: #000;
+		}
+	}
+}
+
+.news-item {
+	display: grid;
+	grid-template-columns: calc(400px * 0.7) 500px;
+	grid-template-rows: repeat(3, auto);
+	grid-gap: 20px;
+	position: relative;
+	min-height: calc(225px * 0.7);
+
+	&-link {
+		margin-top: 30px;
+	}
+
+	&-img {
+		grid-column: 1;
+		grid-row: 1/4;
+		position: relative;
+		overflow: hidden;
+		border-radius: 15px;
+
+		img {
+			position: absolute;
+			min-width: 100%;
+			min-height: 100%;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			object-fit: cover;
+			transition: 0.4s;
+
+			&:hover {
+				transition: 0.7s;
+				min-width: 115%;
+				min-height: 115%;
+			}
+
+			&.logo {
+				min-width: unset;
+				max-height: calc(225px * 0.7);
+			}
+		}
+	}
+
+	h2 {
+		grid-row: 2;
+	}
+
+	h2,
+	p,
+	date {
+		grid-column: 2;
+		display: inline-flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		text-align: left;
+	}
+
+	p {
+		grid-row: 3;
+		color: #1a2643;
+		font-style: italic;
+		font-weight: 500;
+	}
+
+	date {
+		grid-row: 1;
+		align-items: flex-end;
+		color: gray;
+	}
+}
+
+*+h1,
+*+h2 {
+	margin-top: 0 !important;
+}
+
+h2+p {
+	margin-top: 0 !important;
+}
+
+@media (max-width: 992px) {
+	.news-item {
+		max-width: 100%;
+		grid-template-columns: calc(300px * 0.7) auto;
+		grid-gap: 10px;
+		min-height: calc(169px * 0.7);
+
+		&-img {
+			img {
+				min-height: unset;
+				height: calc(169px * 0.7);
+			}
+		}
+
+		h2 {
+			font-size: 22px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.news-item {
+		grid-template-columns: 200px auto;
+		min-height: 112px;
+
+		&-img {
+			img {
+				height: 112px;
+			}
+		}
+
+		h2 {
+			font-size: 20px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.news-item {
+		grid-template-columns: 100%;
+		grid-template-rows: 250px repeat(3, auto);
+		position: relative;
+		min-height: unset;
+		grid-gap: 0;
+
+		&-img {
+			grid-column: 1;
+			grid-row: 1;
+			height: 100%;
+
+			img {
+				height: 250px;
+			}
+
+			img.logo {
+				min-width: unset;
+			}
+		}
+
+		h2,
+		p,
+		date {
+			grid-column: 1;
+		}
+
+		h2 {
+			grid-row: 3;
+		}
+
+		p {
+			grid-row: 4;
+		}
+
+		date {
+			grid-row: 2;
+			align-items: flex-end;
+		}
+	}
+}

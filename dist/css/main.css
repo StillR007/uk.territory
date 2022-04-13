@@ -1,0 +1,258 @@
+.hidden-for-some-time {
+  display: none !important;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  overflow-anchor: none;
+}
+
+img {
+  display: block;
+  border-style: none;
+}
+
+ol,
+li {
+  list-style: none;
+}
+
+a,
+button {
+  position: relative;
+  color: currentColor;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s linear 0s, border 0.3s linear 0s, color 0.3s linear 0s;
+  -o-transition: background-color 0.3s linear 0s, border 0.3s linear 0s, color 0.3s linear 0s;
+  transition: background-color 0.3s linear 0s, border 0.3s linear 0s, color 0.3s linear 0s;
+  background: transparent;
+}
+
+a:visited,
+a :focus,
+a :active,
+a :hover,
+button:visited,
+button :focus,
+button :active,
+button :hover {
+  color: currentColor;
+  text-decoration: none;
+  background-size: 100% 1px;
+  outline: none;
+}
+
+a:hover,
+button:hover {
+  -webkit-transition: background-color 0.3s linear 0s, border 0.3s linear 0s, color 0.3s linear 0s;
+  -o-transition: background-color 0.3s linear 0s, border 0.3s linear 0s, color 0.3s linear 0s;
+  transition: background-color 0.3s linear 0s, border 0.3s linear 0s, color 0.3s linear 0s;
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 14px;
+  color: #163048;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.15em;
+  font-weight: 700;
+}
+
+.container-fluid.main-container {
+  padding-left: 30px;
+}
+
+.btn.btn-territory {
+  border: 1px solid #89b439;
+  color: #fff !important;
+  background-color: #89b439;
+}
+
+.btn.btn-territory:hover {
+  background-color: #6b961b;
+  border: 1px solid #6b961b;
+}
+
+.btn.btn-territory span {
+  color: #fff;
+}
+
+.btn.btn-territory span:hover {
+  color: #fff !important;
+}
+
+.btn.btn-white,
+.btn.btn-territory {
+  white-space: nowrap;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 7px 16px;
+  max-width: 100%;
+}
+
+.btn-absolute {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+}
+
+.btn.btn-white {
+  border: 1px solid rgba(137, 180, 57, 0.16);
+  color: #89b439 !important;
+  background-color: transparent;
+}
+
+.btn.btn-white:hover {
+  color: white !important;
+  background-color: #89b439;
+  border-color: #89b439;
+}
+
+.rd-navbar-icon.linearicons-plus {
+  color: #fff;
+}
+
+#auth-link a,
+#auth-link span {
+  color: #9a9393;
+}
+
+.ajs-header {
+  display: none;
+}
+
+nav,
+footer {
+  z-index: 35 !important;
+}
+
+.rd-navbar-fixed {
+  z-index: 36 !important;
+}
+
+main {
+  padding: 30px 20px 50px;
+}
+
+.rd-navbar-panel-cell.rd-navbar-panel-cell-search {
+  display: block !important;
+}
+
+.rd-navbar-panel-cell.rd-navbar-panel-cell-search div.address {
+  display: block;
+}
+
+.rd-navbar-panel-cell.rd-navbar-panel-cell-search div.address h2 {
+  font-size: 16px;
+}
+
+.rd-navbar-panel-cell.rd-navbar-panel-cell-search div.address p {
+  font-size: 12px;
+  margin: 0 !important;
+}
+
+.topbar {
+  padding: 30px 20px 0 !important;
+  display: none;
+}
+
+.topbar div.address {
+  display: none;
+}
+
+.topbar div.address h2 {
+  font-size: 24px;
+}
+
+.topbar div.address p {
+  font-size: 14px;
+  margin: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .rd-navbar-panel-cell.rd-navbar-panel-cell-search {
+    display: none !important;
+  }
+
+  .rd-navbar-panel-cell.rd-navbar-panel-cell-search div.address {
+    display: none;
+  }
+
+  .topbar {
+    display: block;
+  }
+
+  .topbar div.address {
+    display: block;
+  }
+
+  main {
+    padding: 20px 10px 40px;
+  }
+
+  .topbar {
+    padding: 20px 10px 0 !important;
+  }
+
+  body {
+    line-height: 16px;
+    font-size: 12px;
+  }
+
+  body.lock {
+    overflow: hidden;
+  }
+}

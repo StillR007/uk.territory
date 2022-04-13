@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@400;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="/css/mainCss.min.css">
+	<script src="/js/jquery-3.6.0.slim.min.js"></script>
+	<script src="/js/mainJs.min.js"></script>
+	<title>test_site</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<img class="logo-img" src="/img/logo.png">
+			<img class="logo-img-small" src="/img/logo-img-small.png">
+
+			<span class="nav__languages">
+				<a href="#" class="nav__languages--link-ru">RU</a>
+				<a href="#" class="nav__languages--link-en">EN</a>
+			</span>
+
+			<div class="nav__links">
+				<div class="nav__links--border-1"><a class="nav__links--link">Проекты</a></div>
+				<div class="nav__dropdown-content-1">
+					<div class="nav__dropdown-container">
+						<a href="/masterplans/index.html">Мастерпланы</a>
+						<a href="/masterplans/index.html" class="nav__dropdown-number">12</a>
+						<a href="/masterplans/index.html" class="nav__dropdown-arrow"><svg width="35" height="8" viewBox="0 0 35 8"
+								fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M30.6 6.95C30.4 6.75 30.4 6.45 30.6 6.25L32.6 4.05H0V3.05H32.6L30.7 0.85C30.5 0.65 30.5 0.35 30.7 0.15C30.9 -0.05 31.2 -0.05 31.4 0.15L34.8 3.55L31.4 6.95C31.2 7.05 30.8 7.05 30.6 6.95Z"
+									fill="#2E2E2E" />
+							</svg></a>
+					</div>
+					<div class="nav__dropdown-container">
+						<a href="/architecture/index.html">Архитектура</a>
+						<a href="/architecture/index.html" class="nav__dropdown-number">12</a>
+						<a href="/architecture/index.html" class="nav__dropdown-arrow"><svg width="35" height="8" viewBox="0 0 35 8"
+								fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M30.6 6.95C30.4 6.75 30.4 6.45 30.6 6.25L32.6 4.05H0V3.05H32.6L30.7 0.85C30.5 0.65 30.5 0.35 30.7 0.15C30.9 -0.05 31.2 -0.05 31.4 0.15L34.8 3.55L31.4 6.95C31.2 7.05 30.8 7.05 30.6 6.95Z"
+									fill="#2E2E2E" />
+							</svg></a>
+					</div>
+					<div class="nav__dropdown-container">
+						<a href="/improvement/index.html">Благоустройство</a>
+						<a href="/improvement/index.html" class="nav__dropdown-number">12</a>
+						<a href="/improvement/index.html" class="nav__dropdown-arrow"><svg width="35" height="8" viewBox="0 0 35 8"
+								fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M30.6 6.95C30.4 6.75 30.4 6.45 30.6 6.25L32.6 4.05H0V3.05H32.6L30.7 0.85C30.5 0.65 30.5 0.35 30.7 0.15C30.9 -0.05 31.2 -0.05 31.4 0.15L34.8 3.55L31.4 6.95C31.2 7.05 30.8 7.05 30.6 6.95Z"
+									fill="#2E2E2E" />
+							</svg></a>
+					</div>
+					<div class="nav__dropdown-container">
+						<a href="/interiors/index.html">Интерьеры</a>
+						<a href="/interiors/index.html" class="nav__dropdown-number">12</a>
+						<a href="/interiors/index.html" class="nav__dropdown-arrow"><svg width="35" height="8" viewBox="0 0 35 8"
+								fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M30.6 6.95C30.4 6.75 30.4 6.45 30.6 6.25L32.6 4.05H0V3.05H32.6L30.7 0.85C30.5 0.65 30.5 0.35 30.7 0.15C30.9 -0.05 31.2 -0.05 31.4 0.15L34.8 3.55L31.4 6.95C31.2 7.05 30.8 7.05 30.6 6.95Z"
+									fill="#2E2E2E" />
+							</svg></a>
+					</div>
+				</div>
+
+				<div class="nav__links--border-2"><a class="nav__links--link">Блоги</a></div>
+
+				<div class="nav__links--border-3"><a class="nav__links--link">Институт</a></div>
+				<div class="nav__dropdown-content-3">
+					<div class="nav__dropdown-container">
+						<a href="/about/index.html">Об институте</a>
+						<a href="/about/index.html" class="nav__dropdown-arrow">
+							<svg width="35" height="8" viewBox="0 0 35 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M30.6 6.95C30.4 6.75 30.4 6.45 30.6 6.25L32.6 4.05H0V3.05H32.6L30.7 0.85C30.5 0.65 30.5 0.35 30.7 0.15C30.9 -0.05 31.2 -0.05 31.4 0.15L34.8 3.55L31.4 6.95C31.2 7.05 30.8 7.05 30.6 6.95Z"
+									fill="#2E2E2E" />
+							</svg></a>
+					</div>
+					<div class="nav__dropdown-container">
+						<a href="#">Карьера</a>
+						<a href="#" class="nav__dropdown-arrow"><svg width="35" height="8" viewBox="0 0 35 8" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M30.6 6.95C30.4 6.75 30.4 6.45 30.6 6.25L32.6 4.05H0V3.05H32.6L30.7 0.85C30.5 0.65 30.5 0.35 30.7 0.15C30.9 -0.05 31.2 -0.05 31.4 0.15L34.8 3.55L31.4 6.95C31.2 7.05 30.8 7.05 30.6 6.95Z"
+									fill="#2E2E2E" />
+							</svg></a>
+					</div>
+					<div class="nav__dropdown-container">
+						<a href="#">Интернатура</a>
+						<a href="#" class="nav__dropdown-arrow"><svg width="35" height="8" viewBox="0 0 35 8" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M30.6 6.95C30.4 6.75 30.4 6.45 30.6 6.25L32.6 4.05H0V3.05H32.6L30.7 0.85C30.5 0.65 30.5 0.35 30.7 0.15C30.9 -0.05 31.2 -0.05 31.4 0.15L34.8 3.55L31.4 6.95C31.2 7.05 30.8 7.05 30.6 6.95Z"
+									fill="#2E2E2E" />
+							</svg></a>
+					</div>
+				</div>
+
+				<div class="nav__links--border-4"><a class="nav__links--link">Контакты</a></div>
+			</div>
+
+			<div class="nav__search"></div>
+
+			<div class="nav__search-popup">
+				<img class="nav__search-popup--logo" src="/img/logo.png" />
+				<img class="nav__search-popup--logo-small" src="/img/logo-img-small.png" />
+
+				<div class="nav__search-popup--close"></div>
+
+				<form class="nav__search-popup--search" action="" enctype="text/plain" target="_self" method="POST">
+					<input id="search-input" type="text" list="search-variants" autofocus placeholder="Поиск по сайту"
+						size="50" />
+					<button type="submit"></button>
+				</form>
+
+				<div class="nav__search-popup--recomended">
+					<p>Рекомендации</p>
+					<p>Политика конфиденциальности</p>
+					<p>Реализованные проекты</p>
+					<p>Общественные пространства</p>
+					<p>Вакансии</p>
+				</div>
+
+				<div class="nav__search-popup--all-results-count">Найдено результатов: 16</div>
+
+				<div class="nav__search-popup-projects-results">
+					<div class="nav__search-popup-projects-results--head">
+						<div>
+							<p>Найдено в разделе</p>
+							<p>Проекты</p>
+						</div>
+						<div>
+							<p>Всего: </p>
+							<p>8</p>
+						</div>
+					</div>
+
+					<div class="nav__search-popup-projects-results--photos">
+						<div class="nav__search-popup-projects-results--photo">
+							<img src="img/Present-test_00.jpg" />
+							<p class="nav__search-popup-projects-results--photo-info">
+								<a class="nav__search-popup-projects-results--photo-info-name">Nova Park II</a>
+								<a class="nav__search-popup-projects-results--photo-info-year">2020</a>
+							</p>
+						</div>
+						<div class="nav__search-popup-projects-results--photo">
+							<img src="img/Present-test_01.jpg" />
+							<p class="nav__search-popup-projects-results--photo-info">
+								<a class="nav__search-popup-projects-results--photo-info-name">Nova Park II</a>
+								<a class="nav__search-popup-projects-results--photo-info-year">2020</a>
+							</p>
+						</div>
+						<div class="nav__search-popup-projects-results--photo">
+							<img src="img/Present-test_02.jpg" />
+							<p class="nav__search-popup-projects-results--photo-info">
+								<a class="nav__search-popup-projects-results--photo-info-name">Nova Park II</a>
+								<a class="nav__search-popup-projects-results--photo-info-year">2020</a>
+							</p>
+						</div>
+						<div class="nav__search-popup-projects-results--photo">
+							<img src="img/Present-test_03.jpg" />
+							<p class="nav__search-popup-projects-results--photo-info">
+								<a class="nav__search-popup-projects-results--photo-info-name">Nova Park II</a>
+								<a class="nav__search-popup-projects-results--photo-info-year">2020</a>
+							</p>
+						</div>
+						<div class="nav__search-popup-projects-results--photo">
+							<img src="img/Present-test_04.jpg" />
+							<p class="nav__search-popup-projects-results--photo-info">
+								<a class="nav__search-popup-projects-results--photo-info-name">Nova Park II</a>
+								<a class="nav__search-popup-projects-results--photo-info-year">2020</a>
+							</p>
+						</div>
+						<div class="nav__search-popup-projects-results--photo">
+							<img src="img/Present-test_05.jpg" />
+							<p class="nav__search-popup-projects-results--photo-info">
+								<a class="nav__search-popup-projects-results--photo-info-name">Nova Park II</a>
+								<a class="nav__search-popup-projects-results--photo-info-year">2020</a>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="nav__search-popup-blogs-results">
+					<div class="nav__search-popup-blogs-results--head">
+						<div>
+							<p>Найдено в разделе</p>
+							<p>Блоги</p>
+						</div>
+						<div>
+							<p>Всего: </p>
+							<p>8</p>
+						</div>
+					</div>
+					<div class="nav__search-popup-blogs-results--photos">
+						<div class="nav__search-popup-blogs-results--photo">
+							<img src="img/Present-test_00.jpg" />
+							<div class="nav__search-popup-blogs-results--photo-info">
+								<p class="nav__search-popup-blogs-results--photo-info-name">Малоценная застройка в контексте всего
+									города</p>
+								<p class="nav__search-popup-blogs-results--photo-info-year">03.07.2021</p>
+							</div>
+						</div>
+						<div class="nav__search-popup-blogs-results--photo">
+							<img src="img/Present-test_01.jpg" />
+							<div class="nav__search-popup-blogs-results--photo-info">
+								<p class="nav__search-popup-blogs-results--photo-info-name">Малоценная застройка в контексте всего
+									города</p>
+								<p class="nav__search-popup-blogs-results--photo-info-year">03.07.2021</p>
+							</div>
+						</div>
+						<div class="nav__search-popup-blogs-results--photo">
+							<img src="img/Present-test_02.jpg" />
+							<div class="nav__search-popup-blogs-results--photo-info">
+								<p class="nav__search-popup-blogs-results--photo-info-name">Малоценная застройка в контексте всего
+									города</p>
+								<p class="nav__search-popup-blogs-results--photo-info-year">03.07.2021</p>
+							</div>
+						</div>
+						<div class="nav__search-popup-blogs-results--photo">
+							<img src="img/Present-test_03.jpg" />
+							<div class="nav__search-popup-blogs-results--photo-info">
+								<p class="nav__search-popup-blogs-results--photo-info-name">Малоценная застройка в контексте всего
+									города</p>
+								<p class="nav__search-popup-blogs-results--photo-info-year">03.07.2021</p>
+							</div>
+						</div>
+						<div class="nav__search-popup-blogs-results--photo">
+							<img src="img/Present-test_04.jpg" />
+							<div class="nav__search-popup-blogs-results--photo-info">
+								<p class="nav__search-popup-blogs-results--photo-info-name">Малоценная застройка в контексте всего
+									города</p>
+								<p class="nav__search-popup-blogs-results--photo-info-year">03.07.2021</p>
+							</div>
+						</div>
+						<div class="nav__search-popup-blogs-results--photo">
+							<img src="img/Present-test_05.jpg" />
+							<div class="nav__search-popup-blogs-results--photo-info">
+								<p class="nav__search-popup-blogs-results--photo-info-name">Малоценная застройка в контексте всего
+									города</p>
+								<p class="nav__search-popup-blogs-results--photo-info-year">03.07.2021</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="nav__right-items">
+				<div class="nav__burger"></div>
+				<div class="nav__burger-menu">
+					<ul class="nav__list">
+						<div class="nav__burger-links--border-1"><a class="nav__burger-links--link">Проекты</a>
+							<a href="#" class="nav__burger-dropdown-arrow-1"><svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 1L5 5L1 1" stroke="#808080" stroke-miterlimit="10" />
+								</svg></a></div>
+						<div class="nav__burger-dropdown-content-1">
+							<div class="nav__burger-dropdown-container">
+								<a href="#">Мастерпланы</a>
+							</div>
+							<div class="nav__burger-dropdown-container">
+								<a href="#">Архитектура</a>
+							</div>
+							<div class="nav__burger-dropdown-container">
+								<a href="#">Благоустройство</a>
+							</div>
+							<div class="nav__burger-dropdown-container">
+								<a href="#">Интерьеры</a>
+							</div>
+						</div>
+
+						<div class="nav__burger-links--border-2"><a class="nav__burger-links--link">Блоги</a></div>
+
+						<div class="nav__burger-links--border-3"><a class="nav__links--link">Институт</a>
+							<a href="#" class="nav__burger-dropdown-arrow-3"><svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 1L5 5L1 1" stroke="#808080" stroke-miterlimit="10" />
+								</svg></a></div>
+						<div class="nav__burger-dropdown-content-3">
+							<div class="nav__burger-dropdown-container">
+								<a href="#">Об институте</a>
+							</div>
+							<div class="nav__burger-dropdown-container">
+								<a href="#">Карьера</a>
+							</div>
+							<div class="nav__burger-dropdown-container">
+								<a href="#">Интернатура</a>
+							</div>
+						</div>
+
+						<div class="nav__burger-links--border-4"><a class="nav__links--link">Контакты</a></div>
+
+
+						<div class="nav__burger-logo"><img src="img/logo.png"></div>
+						<div class="nav__burger-languages">
+							<a href="#" class="nav__languages--link-ru">RU</a>
+							<a href="#" class="nav__languages--link-en">EN</a>
+						</div>
+					</ul>
+				</div>
+			</div>
+
+		</nav>
+	</header>

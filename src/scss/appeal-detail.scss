@@ -1,0 +1,296 @@
+a.appeal-top__link {
+	padding: 20px 0 0;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #89b439 !important;
+	text-decoration: none;
+	display: inline-flex;
+	-webkit-box-align: center;
+	align-items: center;
+
+	&:hover {
+		color: rgb(107, 150, 27) !important;
+	}
+}
+
+.appeal-top {
+	display: grid;
+	grid-template-columns: auto 385px;
+	grid-template-rows: auto auto;
+	align-items: center;
+	padding: 15px 0 27px;
+	gap: 5px 40px;
+
+	&__info {
+		p {
+			font-size: 18px;
+			line-height: 23px;
+			font-weight: 400;
+		}
+
+		h1 {
+			margin-top: 0;
+			padding-top: 0;
+			display: block;
+			font-size: 36px;
+			line-height: 43px;
+		}
+	}
+
+	&__price {
+		text-align: end;
+
+		p {
+			font-size: 36px;
+			line-height: 43px;
+			font-weight: normal;
+			opacity: 0.2;
+			letter-spacing: 1px;
+		}
+	}
+
+	&__status {
+		display: inline-flex;
+
+		div {
+			color: #1a2643;
+			font-weight: 500;
+		}
+
+		&-circle {
+			display: inline-block;
+			flex-shrink: 0;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			margin-right: 4px;
+
+			&.blue {
+				background-color: rgb(0, 190, 239);
+			}
+
+			&.gray {
+				background-color: rgb(193, 199, 208);
+			}
+
+			&.red {
+				background-color: rgb(255, 93, 93);
+			}
+		}
+
+		time {
+			color: rgb(138, 151, 163);
+			margin-left: 25px;
+		}
+	}
+}
+
+.appeal-main {
+	padding: 10px 0 27px;
+
+	&__title {
+		margin-bottom: 10px;
+		font-size: 12px;
+		line-height: 18px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		margin-bottom: 30px;
+		font-size: 18px;
+		line-height: 23px;
+		font-weight: 400;
+
+		.stars {
+			display: inline-flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 140px;
+
+			svg {
+				width: 28px;
+				height: 28px;
+				margin: 0 5px;
+				cursor: pointer;
+				fill: rgb(227, 229, 235);
+
+				&.checked {
+					fill: rgb(255, 93, 93);
+				}
+			}
+
+			&__line {
+				width: 50px;
+				height: 1px;
+				background-color: rgb(227, 229, 235);
+			}
+
+			.btn.btn-territory {
+				max-width: unset;
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+.reviews-reply-field-setting {
+	display: none;
+}
+
+.form {
+	width: 100%;
+
+	&-container {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		visibility: hidden;
+
+		&.active {
+			display: flex;
+			justify-content: center;
+			overflow: hidden;
+			z-index: 50;
+			background-color: #fff;
+			visibility: visible;
+			background: rgba(255, 255, 255, .8);
+		}
+	}
+
+	&-wrapper {
+		position: relative;
+		width: 420px;
+		padding: 40px 50px 60px;
+		margin: auto;
+		height: auto;
+		max-height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden auto;
+		z-index: 51;
+		border-radius: 8px;
+		box-shadow: rgba(138, 151, 163, .2) 0px 10px 40px 0px, rgba(22, 48, 72, .1) 0px 5px 10px 0px;
+		background-color: #fff;
+
+		p {
+			font-size: 32px;
+			line-height: 43px;
+			font-weight: 500;
+			margin-bottom: 15px;
+			text-align: center;
+		}
+
+		textarea {
+			margin: 15px 0;
+			font-size: 16px;
+			line-height: 20px;
+			color: rgb(22, 48, 72);
+		}
+
+		.btn.btn-territory.btn-round-right {
+			transition: none !important;
+			width: 100%;
+		}
+
+		#close-form {
+			position: absolute;
+			top: 25px;
+			right: 25px;
+			width: 15px;
+			height: 15px;
+			cursor: pointer;
+		}
+	}
+
+	&-stars {
+		display: inline-flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+
+		svg {
+			width: 28px;
+			height: 28px;
+			margin: 0 5px;
+			cursor: pointer;
+			fill: rgb(227, 229, 235);
+
+			&.checked {
+				fill: rgb(255, 93, 93);
+			}
+		}
+
+		&__line {
+			width: 50px;
+			height: 1px;
+			background-color: rgb(227, 229, 235);
+		}
+	}
+}
+
+.content-side__title,
+.reviews-reply-form {
+	padding: 10px 0;
+	max-width: calc(100vw - 40px);
+	overflow: hidden;
+}
+
+.reviews-block-outer {
+	padding: 10px 0px 27px !important;
+}
+
+.reviews-reply-form {
+	margin-left: 0 !important;
+}
+
+@media (max-width: 1366px) {
+	.appeal-top {
+		grid-template-columns: auto 215px;
+	}
+}
+
+@media (max-width: 992px) {
+	.appeal-top {
+		grid-template-columns: 100%;
+		grid-gap: 10px;
+
+		&__price {
+			text-align: start;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	a.appeal-top__link {
+		padding: 20px 0 0;
+	}
+
+	.content-side__title,
+	.reviews-reply-form {
+		padding: 10px 0;
+	}
+
+	.appeal-top {
+		padding: 20px 0 17px;
+
+		&__info h1 {
+			font-size: 28px;
+			line-height: 32px;
+		}
+
+		&__price p {
+			font-size: 28px;
+			line-height: 32px;
+		}
+	}
+
+
+	.appeal-main {
+		padding: 10px 0;
+	}
+}
